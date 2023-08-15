@@ -1,0 +1,24 @@
+# --------------------------- Interpreter/Compiler -----------`---------------- #
+
+Compiler: C, C++, Java, C#, Rust
+	test.c => test.o => test.exe
+
+Interpreter: Python, Ruby, PHP, JavaScript
+
+# ----------------------------- IDE/Text Editors ----------------------------- #
+IDE = Integrated Development Environment
+
+
+IDE => PyCharm =>All Inclusive
+TextEditor: VScode, Sublime Text
+
+	PyCharm =>free community version; non open source; targeted to python only
+	VSCode => free and open source; Microsoft; target to any programming language (universal);
+	SublimeText => free; non open source
+
+# ----------------------------- Bit/Bytes/MB/... ----------------------------- #
+bit = 0|1
+1byte = 8bit: 00000010
+	256 different combinations 0 and 1
+
+1KB = 1024 byte
