@@ -1,0 +1,16 @@
+RAM (16GB):
+	Free:
+		x=>0x1234: 00000011 (3)
+
+---
+
+VSCode Keyboard Shortcuts:
+CTRL+/ => toggle
+
+Logical OPerators:
+
+AND:
+true AND false = false
+false AND true = false
+false AND false = false
+true AND true = true
