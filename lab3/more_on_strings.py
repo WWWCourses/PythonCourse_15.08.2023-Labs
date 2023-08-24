@@ -74,9 +74,13 @@
 # print( f'{2+3}')
 # print( f'2+3')
 
-# fruit = 'orange'
+
 # TODO: make it work and explain
-# print('|{fruit:<10}|'.format(fruit))
+fruit = 'orange'
+# print('|{:^10}|'.format(fruit))
+# print(f'|{fruit:^10}|')
+# print('abc'.center(9))
+# print(f'{"abc":^9s}')
 
 
 ### 2. with format method:
@@ -132,8 +136,8 @@
 # print( str1.find('y') )
 
 # str.find(sub[, start[, end]])
-print( 'abc'.find('a') )
-print( 'abc'.find('a', ) )
+# print( 'abc'.find('a') )
+# print( 'abc'.find('a', ) )
 
 
 
@@ -159,10 +163,12 @@ print( 'abc'.find('a', ) )
 
 ### str.center(width[, fillchar])
 
-### TODO: explain center
-print('abc dfe'.center(3)) # 'c d'
-print('abc dfe'.center(3, '@')) # 'c d'
+# ### TODO: explain center
+# print('abc dfe'.center(3))
+# print('abc dfe'.center(3, '@'))
 
+# print('abc'.center(9))
+# print('abc'.center(9,'*'))
 
 
 
