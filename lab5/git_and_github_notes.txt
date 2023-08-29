@@ -1,0 +1,5 @@
+# github:
+	where you can share your git repositories
+	alternatives: gitlab,Bitbucket, ...
+
+# repository =~ project folder
