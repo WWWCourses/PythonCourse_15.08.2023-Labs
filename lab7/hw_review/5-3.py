@@ -12,7 +12,7 @@ both_bucket_volume = bucket1_volume + bucket2_volume
 bucket1_count = 0
 bucket2_count = 0
 
-target_volume = 107
+target_volume = 16
 
 
 fill_count_both = target_volume//both_bucket_volume
