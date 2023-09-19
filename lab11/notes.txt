@@ -1,0 +1,4 @@
+Module in Python == Python file(code)
+1. Built-in modules
+2. Third party modules
+3. Custom modules
