@@ -1,7 +1,7 @@
-names = ["Ivan", "Alex", "Maria", "Angel", ""]
+# foo_lmbd = lambda d:[0]
 
-# With comprehensions:
-a_names = [name for name in names if name.startswith('A')]
-# With filter:
-a_names = filter(lambda name: name.startswith('A'), names)
-print(list(a_names))
+# def foo(d):
+# 	return [0]
+
+# print( foo(2) )
+# print( foo_lmbd(2) )
