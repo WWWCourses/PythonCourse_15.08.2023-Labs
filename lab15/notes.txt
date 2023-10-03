@@ -1,0 +1,9 @@
+Programming paradigms (style):
+
+1. Procedural (Basic, Python)
+2. Functional (Python, Lisp, Haskell)
+3. Object - oriented (Java, C++, Python )
+
+
+sorted([1,2,3],key=foo )
+filter()
