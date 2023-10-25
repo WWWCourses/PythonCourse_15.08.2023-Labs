@@ -54,7 +54,7 @@ import numpy as np
 # # print(arr1d.shape)
 # # arr2d = np.resize(arr1d, (12,))
 
-# # TODO: why None
+# # TODO: DONE (https://numpy.org/doc/stable/reference/generated/numpy.ndarray.resize.html)
 # arr2d = arr1d.resize(12)
 # print(arr2d)
 
