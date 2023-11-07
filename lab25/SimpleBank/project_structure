@@ -1,0 +1,7 @@
+BankomatProject:
+	bankomat #folder for modules
+		user.py
+		functions.py
+
+	main_variant_oop.py
+	main_variant_procedural.py
