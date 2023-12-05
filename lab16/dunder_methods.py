@@ -4,6 +4,7 @@ class Student:
 	def __init__(self, name, sn, age, score):
 		self.name = name
 		self.surname = sn
+
 		self.age = age
 		self.score =score
 	def __str__(self) -> str:
