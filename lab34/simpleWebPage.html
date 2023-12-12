@@ -7,12 +7,11 @@
 </head>
 <body>
 	<form action="">
-		<!-- TODO: fix regex to be understood by browsers-->
 		<label>user name:
 			<input
 				type="text"
 				name="userName"
-				pattern="^[A-Za-z][\w-]{1,13}[A-Za-z0-9]$"
+				pattern="^[A-Za-z](?:\w|-){1,13}[A-Za-z0-9]$"
 				title="Must be 3 to 15 characters (alphanumeric, dashes (-), and underscores (_)) inclusive. Must start with a letter, and must not end with an underscore or dash"
 				required></label>
 		<button>Log in</button>
