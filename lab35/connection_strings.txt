@@ -1,0 +1,15 @@
+Standard Connection Strings:
+'mongodb://localhost:27017/'
+'mongodb://localhost:27017/usersdb'
+
+DNS Connection strings
+From Atlas for Compass
+mongodb+srv://PythonCourse:<password>@cluster0.qprcu.mongodb.net/
+
+Frm Atals for Mongosh
+mongosh "mongodb+srv://cluster0.qprcu.mongodb.net/" --apiVersion 1 --username PythonCourse
+
+From Atlas for VSCode:
+mongodb+srv://PythonCourse:<password>@cluster0.qprcu.mongodb.net/
+
+
