@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Pesho",
+        "balance": 100
+    },
+    {
+        "name": "Ada",
+        "balance": 50
+    },
+    {
+        "name": "Maria",
+        "balance": 200
+    },
+    {
+        "name": "Asen",
+        "balance": 500,
+        "address":{
+            "country": "BG",
+            "town": "Sofia"
+        }
+    }
+]

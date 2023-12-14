@@ -1,0 +1,47 @@
+import pymongo
+from datetime import datetime
+from pprint import pprint
+
+
+class DB:
+	def __init__(self) -> None:
+		pass
+		# # connect to server:
+		self.client = pymongo.MongoClient('mongodb://localhost:27017')
+		# client = pymongo.MongoClient('mongodb+srv://PythonCourse:12345678abv@cluster0.qprcu.mongodb.net/')
+
+		# Create/Use db : 'new-db'
+		self.db = self.client['new-db']
+
+	def show_databases(self):
+		print(self.client.list_database_names())
+
+	def list_all_collection(self):
+		print(self.db.list_collection_names())
+
+	def insert_document(self):
+		# inser a document into a new collection:
+		doc_id = self.db.test_collection.insert_one({'a':1})
+		print(doc_id.inserted_id)
+	def insert_many_documents(self, data):
+		self.db.todos.insert_many(data)
+	def find_first(self):
+		return self.db.todos.find_one()
+	def find_all(self):
+		return self.db.todos.find(
+		{
+			'$and':[
+				{'priority':{'$gt':1}},
+				{'completed':False}
+			]
+		},
+		{
+			'_id':0
+		})
+
+if __name__=='__main__':
+	db = DB()
+	pprint(list(db.find_all()))
+
+
+
