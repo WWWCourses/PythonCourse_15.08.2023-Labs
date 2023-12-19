@@ -27,7 +27,7 @@ class DB:
 		self.db.todos.insert_many(data)
 	def find_first(self):
 		return self.db.todos.find_one()
-	def find_all(self):
+	def find_all_and(self):
 		return self.db.todos.find(
 		{
 			'$and':[
@@ -39,9 +39,42 @@ class DB:
 			'_id':0
 		})
 
+	def find_all(self):
+		return self.db.todos.find({}, {'_id':0})
+
+	def update_many(self):
+		res = self.db.todos.update_many(
+			{'priority':3},
+			{'$set':
+				{'priority':1}
+			}
+		)
+		print(res.matched_count)
+
+	def delete_one(self):
+		res = self.db.todos.delete_one(
+			{'completed':True}
+		)
+
+	def text_index_demo(self):
+		# self.db.todos.create_index('title')
+		self.db.todos.create_index([
+			("title")
+		])
+
+		# TODO: fix error
+		res = self.db.todos.find({ "$text": { "$search": "Learn" } })
+
+		print(list(res))
+
+
+
 if __name__=='__main__':
 	db = DB()
-	pprint(list(db.find_all()))
+	# db.update_many()
+	# db.delete_one()
+	# pprint(list(db.find_all()))
+	db.text_index_demo()
 
 
 
