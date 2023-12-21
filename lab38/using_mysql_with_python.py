@@ -22,9 +22,9 @@ def select_all(conn):
 
 def insert_data(conn):
 	cursor = conn.cursor()
-	# TODO: fix error
+
 	cursor.execute('''
-		INSERT INTO artist VALUES(fname, lname, age)
+		INSERT INTO artist (fname, lname, age) VALUES
 			('Ada', 'Byron', 23),
 			('Pesho', 'Petrov', 34);
 	''')
