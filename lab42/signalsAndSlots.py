@@ -7,24 +7,26 @@ class MainWindow(qtw.QWidget):
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
 		btnClose = qtw.QPushButton('Close')
-		btnFoo = qtw.QPushButton('Foo')
+		btnClick = qtw.QPushButton('Click')
 
 		# qtw.QVBoxLayout(self).addWidget(btnClose)
 		mainLayout = qtw.QVBoxLayout()
 		mainLayout.addWidget(btnClose)
+		mainLayout.addWidget(btnClick)
 		self.setLayout(mainLayout)
 		self.setGeometry(300, 300, 400, 300)
 
-		# on btnFoo click => btnClose.close()
 
-		# TODO: why not emitting clicked...
-		btnClose.click()
-
-		# on btnClose click => onBtnCloseClick
-		btnClose.clicked.connect( self.onBtnCloseClick )
-
+		# on btnClose click => close()
+		btnClose.clicked.connect( self.close )
 		# on btnClose press down => print('btnClose was press down')
 		btnClose.pressed.connect( self.onBtnClosePress )
+
+		# on btnClick => 'hi'
+		btnClick.clicked.connect( self.onBtnClickClick )
+
+	def onBtnClickClick(self):
+		print('Hi...')
 
 	def onBtnCloseClick(self):
 		# close main widget:
