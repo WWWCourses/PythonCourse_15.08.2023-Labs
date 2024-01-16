@@ -23,38 +23,6 @@ class MainWindow(qtw.QMainWindow):
         self.set_style()
         self.show()
 
-    def create_actions(self):
-        self.openAction = qtg.QAction(
-            self.style().standardIcon(qtw.QStyle.StandardPixmap.SP_DialogOpenButton), #type:ignore
-            "&Open...",
-            self
-        )
-        self.openAction.triggered.connect(self.open_new_file)
-
-        self.saveAction = qtg.QAction(
-            self.style().standardIcon(qtw.QStyle.StandardPixmap.SP_DialogSaveButton), #type:ignore
-            "&Save",
-            self
-        )
-        self.saveAction.setShortcut("Ctrl+S")
-        self.saveAction.setStatusTip("Save your changes")
-        self.saveAction.triggered.connect(self.save_file)
-
-        self.exitAction = qtg.QAction("&Exit", self)
-
-        self.about_action = qtg.QAction(
-            self.style().standardIcon(qtw.QStyle.StandardPixmap.SP_DialogHelpButton), #type:ignore
-            '&About',
-            self  # important to pass the parent!
-        )
-        # add signal
-        self.about_action.triggered.connect(lambda : qtw.QMessageBox.information(
-            self,
-            'My Simple Text Editor',
-            '@2022, Created by ME, no rights reserved!')
-        )
-
-
     def create_menu_bar(self):
         # add menu items
         menubar:qtw.QMenuBar = self.menuBar()   # type:ignore
@@ -122,6 +90,38 @@ class MainWindow(qtw.QMainWindow):
             lambda: charcount_label.setText( "chars: " + str(len(self.textedit.toPlainText())) )
         )
         self.status_bar.addPermanentWidget(charcount_label)
+
+    def create_actions(self):
+        self.openAction = qtg.QAction(
+            self.style().standardIcon(qtw.QStyle.StandardPixmap.SP_DialogOpenButton), #type:ignore
+            "&Open...",
+            self
+        )
+        self.openAction.triggered.connect(self.open_new_file)
+
+        self.saveAction = qtg.QAction(
+            self.style().standardIcon(qtw.QStyle.StandardPixmap.SP_DialogSaveButton), #type:ignore
+            "&Save",
+            self
+        )
+        self.saveAction.setShortcut("Ctrl+S")
+        self.saveAction.setStatusTip("Save your changes")
+        self.saveAction.triggered.connect(self.save_file)
+
+        self.exitAction = qtg.QAction("&Exit", self)
+
+        self.about_action = qtg.QAction(
+            self.style().standardIcon(qtw.QStyle.StandardPixmap.SP_DialogHelpButton), #type:ignore
+            '&About',
+            self  # important to pass the parent!
+        )
+        # add signal
+        self.about_action.triggered.connect(lambda : qtw.QMessageBox.information(
+            self,
+            'My Simple Text Editor',
+            '@2022, Created by ME, no rights reserved!')
+        )
+
 
     @qtc.pyqtSlot()
     def open_new_file(self):

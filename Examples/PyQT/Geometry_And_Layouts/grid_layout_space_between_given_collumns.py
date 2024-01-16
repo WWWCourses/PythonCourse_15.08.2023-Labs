@@ -9,8 +9,9 @@ class GridDemo(qtw.QWidget):
 
         # Create the buttons grid layout
         buttons_layout = qtw.QGridLayout(self)
-        buttons_layout.setHorizontalSpacing(10)
-        buttons_layout.setVerticalSpacing(10)
+        buttons_layout.setHorizontalSpacing(0)
+        # print(buttons_layout.horizontalSpacing())
+        buttons_layout.setVerticalSpacing(0)
 
         # Button positions
         button_positions = [
@@ -21,12 +22,12 @@ class GridDemo(qtw.QWidget):
 
         for (text, row, col) in button_positions:
             button = qtw.QPushButton(text)
-            button.setFixedSize(30,30)
+            # button.setFixedSize(30,30)
             buttons_layout.addWidget(button, row, col)
 
         # Add a spacer item with a width of 100 pixels between the 2nd and 3rd columns
-        spacer = qtw.QSpacerItem(100, 0, qtw.QSizePolicy.Policy.Fixed, qtw.QSizePolicy.Policy.Fixed)
-        buttons_layout.addItem(spacer, 0, 2, rowSpan=buttons_layout.rowCount(), columnSpan=1)
+        # spacer = qtw.QSpacerItem(100, 0, qtw.QSizePolicy.Policy.Fixed, qtw.QSizePolicy.Policy.Fixed)
+        # buttons_layout.addItem(spacer, 0, 2, rowSpan=buttons_layout.rowCount(), columnSpan=1)
 
 
 

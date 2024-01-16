@@ -12,7 +12,6 @@ class MainWindow(qtw.QWidget):
         super().__init__(*args, **kwargs)
         # init DB
         self.db = DB('test', 'test1234','pyqtDemos')
-
         self.setupUI()
 
     def setupUI(self):
@@ -54,6 +53,9 @@ class MainWindow(qtw.QWidget):
     def onBtnLoginClick(self):
         self.loginForm = LoginForm(parentWidget=self)
         self.loginForm.submit.connect(self.onLoginFormSubmit)
+
+        self.btnLogin.clicked.connect( print )
+
         self.loginForm.show()
 
     def onBtnRegistrationClick(self):

@@ -58,6 +58,8 @@ class Calc(qtw.QWidget):
                 self.display.setText('Error')
         elif text == 'Clear':
             self.display.clear()
+        elif text == 'sqrt':
+            pass
         else:
             current_text = self.display.text()
             new_text = current_text + text

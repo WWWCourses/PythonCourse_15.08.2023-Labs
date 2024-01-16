@@ -3,17 +3,12 @@ from PyQt6 import QtWidgets as qtw
 from PyQt6 import QtCore as qtc
 from PyQt6 import QtGui as qtg
 
-from db.db import DB
 
 class LoginForm(qtw.QWidget):
     submit = qtc.pyqtSignal(str, str)
 
     def __init__(self , *args, **kwargs):
         super().__init__()
-        print(self.parent())
-
-        # init login form
-        self.db = DB('test', 'test1234','pyqtDemos')
         self.setupUI()
 
         # connect signals

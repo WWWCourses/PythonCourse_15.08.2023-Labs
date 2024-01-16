@@ -25,11 +25,11 @@ class DB:
 		# prepare SQL query:
 		q = f"""
 			SELECT * FROM users
-				WHERE username='{user_name}'
-				AND `password`='{password}'
+				WHERE username=%s
+				AND password=%s
 		"""
 		# execute the query
-		cursor.execute(q)
+		cursor.execute(q, (user_name, password))
 
 		# we are only interested if 1 or 0 rows are returned
 		res =  cursor.fetchone()
