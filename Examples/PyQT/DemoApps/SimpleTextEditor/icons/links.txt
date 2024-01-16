@@ -1,0 +1,1 @@
+text_editor_icon.png: https://www.iconfinder.com/search?q=text%20editor
