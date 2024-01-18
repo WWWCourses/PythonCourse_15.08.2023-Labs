@@ -32,8 +32,8 @@ class MainWindow(qtw.QWidget):
 
         # table.resizeColumnsToContents()
         table.setMinimumWidth( cols*100 )
-        # TODO: fix minHeight
-        table.setMinimumHeight( rows*10 )
+        # TODO-DONE: fix minHeight of rows
+        table.verticalHeader().setMinimumSectionSize(50)
 
 
         ### Model
