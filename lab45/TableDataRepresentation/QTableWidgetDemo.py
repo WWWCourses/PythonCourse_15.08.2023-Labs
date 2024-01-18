@@ -25,10 +25,11 @@ class MainWindow(qtw.QWidget):
 
 
         ### View
-        # TODO: fix headers
-        table.setHorizontalHeaderLabels(['A', 'B', 'C'])
         table.setRowCount( rows )
         table.setColumnCount( cols )
+        # TODO-DONE: headers MUST be set after setColumnCount(), otherwise it don't knowhow may columns are
+        table.setHorizontalHeaderLabels(['A', 'B', 'C'])
+
         # table.resizeColumnsToContents()
         table.setMinimumWidth( cols*100 )
         # TODO: fix minHeight
