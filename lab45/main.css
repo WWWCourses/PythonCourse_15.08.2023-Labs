@@ -1,0 +1,22 @@
+/* set style for ALL buttnon */
+QPushButton{
+    color: #f00;
+    background-color: #000;
+    border: 2px solid  #999;
+}
+
+/* ------------ set style for ALL buttnon, when the mouse is over ----------- */
+QPushButton:hover{
+    background-color: #333;
+}
+
+/* ------------ set style for all buttons, which are in btnLayout ----------- */
+QGroupBox > QPushButton{
+    color: #333;
+    background-color: #CCC;
+}
+
+/* set speciffic style to btnLogin */
+#btnLogin{
+    color: #0f0;
+}

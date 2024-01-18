@@ -23,7 +23,6 @@ class MainWindow(qtw.QMainWindow):
         # print(f'cursor position: {editor.textCursor().position()}')
 
 
-
 if __name__ == '__main__':
     app = qtw.QApplication(sys.argv);
     window = MainWindow()
