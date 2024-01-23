@@ -1,0 +1,11 @@
+QLabel{
+	border: 2px solid red;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 10px 0px 30px 0px;
+	padding: 10px;
+}
+
+QTableWidget{
+	border: 2px solid blueviolet;
+}

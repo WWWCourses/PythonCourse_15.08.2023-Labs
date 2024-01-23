@@ -1,0 +1,32 @@
+IP Address  : Internet Protocol = Адрес
+MAC Address : Адрес на мрежова карта
+
+
+IPv4 адресите представляват уникални 32-битови номера на компютри и се записват като четири 8-битови числа (в десетична бройна система), разделени по между си с точки (4_294_967_296 varations)
+
+11111111.00001001.00000001.00000000
+
+255.9.1.0
+
+
+The IP Address: 127.0.0.1: Local Host
+
+DNS:
+
+127.0.0.1:          localhost
+241.76.1.201:       mysite.com
+185.123.190.194:    softwareacademy.bg
+
+
+URL:
+http://192.168.104.73:8080/mysite.com/home.html
+http://241.76.1.201:8080/mysite.com/home.html
+http://mysite.com:8080/mysite.com/home.html
+
+Ip Address => гр.София, жк.Младост8, бл1 (241.76.1.201)
+Port=>ап35 (8080)
+
+
+http://127.0.0.1:4444/index.html => mysite.com
+http://127.0.0.1:5555/index.html => othersite.com
+
