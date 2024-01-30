@@ -1,0 +1,20 @@
+{
+	"spellright.language": [
+		"Bulgarian",
+		"English (American)"
+	],
+	"spellright.documentTypes": [
+		"markdown",
+		"latex",
+		"plaintext",
+		"html"
+	],
+	"editor.fontSize": 20,
+	"todo-tree.tree.showBadges": false,
+	"python.analysis.autoImportCompletions": true,
+	"python.interpreterPath": ".venv/bin/python",
+	"pyqt-integration.pylupdate.cmd": "pylupdate6",
+	"pyqt-integration.pyrcc.cmd": "pyrcc6",
+	"pyqt-integration.pyuic.cmd": "pyuic6",
+	"pyqt-integration.qtdesigner.path": "`/home/nemsys/projects/courses/netIT/PythonCourseNetIT/PythonCourse_15.08.2023-Labs/.venv/bin/qt6-tools designer`"
+}
