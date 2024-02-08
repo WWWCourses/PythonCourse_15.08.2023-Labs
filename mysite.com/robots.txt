@@ -1,0 +1,28 @@
+https://www.jarcomputers.com/Laptopi_cat_2.html?ref=c_1
+
+
+User-agent: *
+Allow: /
+Disallow: /secret
+Disallow: /rpc
+Disallow: /product/print_it
+Disallow: /product/load_review
+Disallow: /rpc/econt_old.php
+Disallow: /*?*fprice
+Disallow: /*?*fbrand
+Disallow: /*?*fprop
+Disallow: /*?*order=
+# Disallow: /*?*page=
+Disallow: /*?*filter_q=
+
+# Disallow: /*?*q=
+Disallow: /product/send_feedback
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /

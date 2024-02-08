@@ -1,7 +1,22 @@
-h1{
-    font-size: 16px;
-    font-weight: normal;
+#menu>ul{
+    display: flex;
+    list-style-type: none;
 }
-img{
-    height: 3em;
+#menu li{
+    width: 10em;
+    border: 1px solid #000;
+}
+
+.red{
+    color:red
+}
+.green{
+    color:green;
+}
+span.green{
+    color: #0F0;
+}
+
+.big-size{
+    font-size: 3em;
 }
